@@ -1,0 +1,1968 @@
+[
+  {
+    "subject": "C S",
+    "number": "142",
+    "title": "Introduction to Computer Programming",
+    "code": "C S 142",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduction to object-oriented program design and development.  Principles of algorithm formulation and implementation.",
+    "whenTaught": [
+      "Contact Department"
+    ],
+    "prereqText": "Knowledge of algebra",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "01489-002",
+    "catalogUrl": "https://catalog.byu.edu/courses/01489-002",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Understand the importance of the following concepts",
+        "objective": "AbstractionDebugging and Assurance of CorrectnessProgram Development (analysis, specification, design, implementation, testing)"
+      },
+      {
+        "name": "Write programs whose complexity reaches a few hundred lines",
+        "objective": "Use the rudiments of the environment and the resources available to help them program (editors, basic computer architecture, compilers, libraries, reference manuals, on-line help).&nbsp;\n&nbsp;\nDevelop programs from an English description.\n&nbsp;\nWrite programs on their own, independent of \"hand holding\" by a TA or an instructor (typically a dozen or so).\n&nbsp;\nUnderstand and use the basic programming constructs: types (built in types, basic provided types including arrays and strings, type construction), values (constants,variables, assignment statements, and expressions), control structures (sequential flow, conditional statements, and loops), and I/O (basic output to the screen and input from the keyboard, and file I/O).\n&nbsp;\nUnderstand and use objects (value representation, applicable operations, hidden implementations).\n&nbsp;\nImplement basic recursive algorithms.\n&nbsp;\nDescribe and use the basic ideas of some of the more advanced programming constructs,including exceptions, inheritance, and polymorphism.\n&nbsp;"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "199R",
+    "title": "Academic Internship",
+    "code": "C S 199R",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Internships or cooperative education experiences with organizations outside BYU.",
+    "whenTaught": [
+      "Contact Department"
+    ],
+    "prereqText": "",
+    "coreqText": "",
+    "repeatableForCredit": true,
+    "courseId": "01492-003",
+    "catalogUrl": "https://catalog.byu.edu/courses/01492-003",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Provide Work Experience",
+        "objective": "Students will develop familiarity with industrial software development and analysis."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "312",
+    "title": "Algorithm Design and Analysis",
+    "code": "C S 312",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "A study of the design and analysis of algorithms as solutions to problems, including dynamic programming, linear programming, greedy algorithms, divide-and-conquer algorithms, graph algorithms, and intelligent search algorithms.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"value\": [\"10649-000\"], \"logic\": \"and\"}], \"subSelections\": [], \"id\": \"6vqyMUcw\"}, \"name\": \"Prerequisites\", \"id\": \"uPK4Aix9wgJKAckr5Go0\"}], \"id\": \"4alOiKjh1sigBLojkynJ\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "01499-002",
+    "catalogUrl": "https://catalog.byu.edu/courses/01499-002",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Efficiency",
+        "objective": "\nThe student can make the distinction between problems and their algorithmic solutions. Moreover, the student can distinguish between efficient and inefficient solutions and can relate these distinctions to the complexity classes of problems, namely P, NP, and NP-Complete learned earlier in the curriculum (CS 252).\n"
+      },
+      {
+        "name": "Fundamental Computer Algorithms",
+        "objective": "The student understands fundamental computer algorithms that can be organized in the following algorithmic paradigms: dynamic programming, linear programming, greedy algorithms, divide-and-conquer algorithms, graph algorithms, intelligent search algorithms, and --to a lesser degree--randomized algorithms.&nbsp;As an algorithmic problem solver, the student can formulate novel or unfamiliar problems in mathematical terms so as to elucidate a given problem's relation to known problems, choose a paradigm for solving the problem, and design an algorithm to solve the problem."
+      },
+      {
+        "name": "Correctness",
+        "objective": "The student can prove the correctness of a subset of the algorithms considered in the course."
+      },
+      {
+        "name": "Analysis",
+        "objective": "The student can analyze algorithms belonging to those algorithmic paradigms for their asymptotic worst-case behavior in terms of time and space.&nbsp;Furthermore, the student can analyze algorithms empirically (under simplifying assumptions) and understands the relationship of empirical analysis to average-case behavior.&nbsp;"
+      },
+      {
+        "name": "Implementation",
+        "objective": "The student can independently implement selected algorithms in the context of motivating applications using&nbsp;Python."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "330",
+    "title": "Concepts of Programming Languages",
+    "code": "C S 330",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Principles and concepts characterizing high-level computer programming languages, process and data abstration, encapsulation, inheritance, functional programming, logic programming, scanners, and parsers.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"id\": \"hYq7lSET\", \"name\": \"Prerequisites\", \"type\": \"Completion Requirement\", \"showInCatalog\": true, \"rules\": [{\"id\": \"UZc3Bbl3\", \"condition\": \"anyOf\", \"subRules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"value\": [\"10649-000\", \"13420-000\"], \"logic\": \"and\"}], \"id\": \"ElAUgx73\", \"subSelections\": []}, \"id\": \"UM779hsI\"}, {\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"value\": [\"10649-000\", \"10178-002\"], \"logic\": \"and\"}], \"id\": \"6W57oqYB\", \"subSelections\": []}, \"id\": \"SgCjEQ9U\"}, {\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"value\": [\"03605-008\", \"10648-000\"], \"logic\": \"and\"}], \"id\": \"lzwWbiOn\", \"subSelections\": []}, \"id\": \"5TkemtIC\"}]}], \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "01500-001",
+    "catalogUrl": "https://catalog.byu.edu/courses/01500-001",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Program Language Flexibility",
+        "objective": "Be able to write programs using non-imperative language paradigms."
+      },
+      {
+        "name": "Programming Language Familiarity",
+        "objective": "Learn the vocabulary of programming language design, syntax, and semantics"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "431",
+    "title": "Algorithmic Languages and Compilers",
+    "code": "C S 431",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Formal description of algorithmic languages and techniques used in their compilation:  semantics, ambiguities, procedures, replication, iteration, recursion.",
+    "whenTaught": [
+      "Contact Department"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"11440-001\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"n0mak7UhQ2tyGOUQnedH\"}], \"id\": \"er7O5g7hwEXfe7TN3868\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "01510-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/01510-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Write a compiler",
+        "objective": "Implement a fully functional compiler for a subset of the Java language that targets an embedded microprocess."
+      },
+      {
+        "name": "Use interesting data types and algorithms in a large program",
+        "objective": "Apply patterns and common data structures to compiler constructrion including tree traversal, graph algorithms, and proof systems."
+      },
+      {
+        "name": "Apply techniques from compiler construction to other problem",
+        "objective": "Students are able to synthesis algorithms and techniques from compiler constructor to other problem domains."
+      },
+      {
+        "name": "Mental model of compilation",
+        "objective": "Students have a sound mental model of how an abstract high level language is systematically transformed into a low-level machine langauge or byte code. Students are able to use that understanding to write better application code."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "428",
+    "title": "Software Engineering",
+    "code": "C S 428",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Analysis, design, implementation, and testing of significant software systems.",
+    "whenTaught": [
+      "Contact Department"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"11440-001\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"o5yIAYvtELCBalW37xmd\"}], \"id\": \"j1MxRVGoDNeWHD0f9t3a\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "01512-003",
+    "catalogUrl": "https://catalog.byu.edu/courses/01512-003",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Group Dynamics",
+        "objective": "Demonstrate the ability to work in a group on a significant project"
+      },
+      {
+        "name": "Software Engineering Fundamentals",
+        "objective": "Demonstrate practices that result in quality software"
+      },
+      {
+        "name": "Software Ethics",
+        "objective": "Demonstrate an understanding of how ethics impact software development"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "345",
+    "title": "Operating Systems Design",
+    "code": "C S 345",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Principles and concepts of operating systems design and the implementation of an operating system.",
+    "whenTaught": [
+      "Contact Department"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"10178-002\", \"09200-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"zrNm2tjEBupyccuA3PMT\"}], \"id\": \"0iktpTbw0BjcLkpa5NS2\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "01513-003",
+    "catalogUrl": "https://catalog.byu.edu/courses/01513-003",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Operating System Basics",
+        "objective": "Describe&nbsp;the basic components of an operating system and their role in implementations for general purpose, real-time, and embedded applications."
+      },
+      {
+        "name": "Basic Concepts",
+        "objective": "Define&nbsp;the concepts of processes, threads, asynchronous signals and competitive system resource allocation."
+      },
+      {
+        "name": "Shells",
+        "objective": "Show how&nbsp;a shell works."
+      },
+      {
+        "name": "Scheduling Algorithms for Multi-Tasking",
+        "objective": "Explain what&nbsp;multi-tasking is and&nbsp;outline&nbsp;standard scheduling algorithms for multi-tasking."
+      },
+      {
+        "name": "Mutual Exclusion Principles",
+        "objective": "Discuss&nbsp;mutual exclusion principles and their&nbsp;use&nbsp;in concurrent programming, including semaphore construction and resource allocation."
+      },
+      {
+        "name": "System Memory Management",
+        "objective": "Give an overview&nbsp;of system memory management."
+      },
+      {
+        "name": "Implementing File Systems",
+        "objective": "Explain how&nbsp;file systems are implemented."
+      },
+      {
+        "name": "Competing Operating Systems",
+        "objective": "Discuss&nbsp;the features and strengths of various contemporary operating systems."
+      },
+      {
+        "name": "Implement an Operating System",
+        "objective": "Implement&nbsp;a functional, pre-emptive, multi-tasking operating system written in C, including a shell, scheduler, file manager, memory manager, and synchronization components."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "470",
+    "title": "Introduction to Artificial Intelligence",
+    "code": "C S 470",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduction to core areas of artifical intelligence; intelligent agents, problem solving and search, knowledge-based systems and inference, planning, uncertainty, learning, and perception.",
+    "whenTaught": [
+      "Fall",
+      "Winter",
+      "and Spring"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"anyOf\", \"subRules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"01499-002\", \"13765-000\", \"05604-032\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"PDVfMawqZ93RwSmAA1iC\"}, {\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"01499-002\", \"13765-000\", \"05620-005\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"6IUTwdLFW6X77JUzXZwM\"}, {\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"01499-002\", \"05604-032\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"SejbyCqer41l5F9M9Kzk\"}], \"name\": \"Prerequisites\", \"id\": \"q5ELOYbpuTagjscdySzA\"}], \"id\": \"zkqnrMkQwsC87EPTclqD\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "01526-002",
+    "catalogUrl": "https://catalog.byu.edu/courses/01526-002",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Recognize problems that can use AI methods",
+        "objective": "from business, medicine, robotics, gaming, and machine learning"
+      },
+      {
+        "name": "Identify the component elements of the problem",
+        "objective": "Does it require basic control?\nDoes it involve uncertain reasoning?\nDoes it have a simple goal, sophisticated utility, or multiple attributes?\nDoes it require sequential choice or planning?\nHow may decision makers are involved?"
+      },
+      {
+        "name": "Formalize the problem in a way that is amenable to a solutio",
+        "objective": "What is the internal representation?\nWhat performance criteria are relevant?\nWhat is the nature of the environment?\nWhat are the actuators?\nWhat are the sensors?\nWhat are the agent's utilities?\nHow is uncertainty represented?"
+      },
+      {
+        "name": "Be able to analyze, implement, and experiment with several A",
+        "objective": "Uninformed, informed, constraint-satisfaction, hill-climbing, and stochastic (e.g., genetic algorithms) search\nMarkov provesses, Bayes rule, Bayes nets, Hidden Markov Models, Grid Filters, and Kalman Filters\nExpected utility theory\nMulti-attribute utility theory\nSequential choice under uncertainty: value and policy iteration\nMinimax solutions from game theory: alpha-beta pruning"
+      },
+      {
+        "name": "Analyze and communicate solution quality",
+        "objective": "Determine whether your solution is correct\nExpress the quality of your solution\nValue the need to communicate your solution to others"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "455",
+    "title": "Computer Graphics",
+    "code": "C S 455",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Interactive computer graphics systems programming and architecture.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"id\": \"0oyGR8bk\", \"name\": \"Prerequisites\", \"type\": \"Completion Requirement\", \"showInCatalog\": true, \"rules\": [{\"id\": \"th06WEry\", \"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"value\": [\"12329-002\", \"13764-000\", \"13765-000\"], \"logic\": \"and\"}], \"id\": \"Hh143uLR\", \"subSelections\": []}}], \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "06774-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/06774-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Understanding fundamental principles of computer graphics",
+        "objective": "Students will be proficient in basic computer graphics algorithms such as modeling, trnasformations and rendering.Students will design and code solutions to several programming problems in graphics using algorithms and data structures.In addition, sutudents will use these techniques to program a large semester project."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "252",
+    "title": "Introduction to Computational Theory",
+    "code": "C S 252",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Finite state automata, regular languages, lexical analysis; push-down automata, context-free languages, parsing; Turing machines and unrestricted grammars; computability complexity, NP-completeness.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "C S 236 or concurrent enrollment.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "06974-004",
+    "catalogUrl": "https://catalog.byu.edu/courses/06974-004",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Understand Paradigms",
+        "objective": "Understand the difference between and limitations of paradigms."
+      },
+      {
+        "name": "Decidable and Tractable",
+        "objective": "Understand the difference between computable (decidable) and practically computable (tractable)."
+      },
+      {
+        "name": "Categorize Problems",
+        "objective": "Categorize problems into one of the existing paradigms."
+      },
+      {
+        "name": "Solutions to Problems",
+        "objective": "Design and justify solutions to problems of decidability and tractability."
+      },
+      {
+        "name": "Understand Computing Paradigms",
+        "objective": "Understand the three computing paradigms (DFAs, PDA, Turing Machine) and their language-based equivalents (regular languages,context-free languages, computable algorithms)."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "460",
+    "title": "Computer Communications and Networking",
+    "code": "C S 460",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduction to data communications and computer networking.  Communications fundamentals, computer networks, software, architecture, telecommunications, regulation, standards.",
+    "whenTaught": [
+      "Fall"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"10648-000\"]}], \"subSelections\": [], \"id\": \"EzK1amNZ\"}, \"name\": \"Prerequisites\", \"id\": \"vPsHwDNkrAEm21TIsAto\"}], \"id\": \"KdqjkmpKE8BTBTNmZPMY\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "07626-002",
+    "catalogUrl": "https://catalog.byu.edu/courses/07626-002",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Internet Architecture",
+        "objective": "Understand the principles of the Internet architecture"
+      },
+      {
+        "name": "Internet Design",
+        "objective": "Understand how the Internet works, from the transport layer down to the physical layer"
+      },
+      {
+        "name": "Internet Implementation",
+        "objective": "Gain hands-on experience with implementing and simulating transport, routing, and MAC protocols, leading to a deeper understanding of these critical Internet components"
+      },
+      {
+        "name": "Internet Research",
+        "objective": "Be capable of reading and understanding research papers in the area of computer networking"
+      },
+      {
+        "name": "Scholarly Communication",
+        "objective": "Demonstrate the ability to effectively conduct, describe and report on an experimental research project in the area of computer networking"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "452",
+    "title": "Database Modeling Concepts",
+    "code": "C S 452",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Database models:  relational, deductive, object-oriented.  Integrity constraints, query languages, database design.",
+    "whenTaught": [
+      "Fall",
+      "Winter",
+      "and Spring"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"09200-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"uGXoPJZ7OfoY9STSd01P\"}], \"id\": \"1wGkRLK9vI1ybvk0PIfz\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "08102-002",
+    "catalogUrl": "https://catalog.byu.edu/courses/08102-002",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Query Languages",
+        "objective": "Be able to use a variety of commercial query languages (SQL, XQuery, SPARQL), both stand-alone and embeded in high-level programming languages. Know how relational algebra and relational calculus provide a basis for commercial query languages."
+      },
+      {
+        "name": "Query Optimization",
+        "objective": "Understand performance issues and optimization strategies. This includes query rewriting, secondary storage characteristics, and access strategies."
+      },
+      {
+        "name": "Database Design",
+        "objective": "Be able to design and develop relational database applications. This includes conceptual modeling and normalization theory."
+      },
+      {
+        "name": "Current Challenges",
+        "objective": "Be familiar with some of the current challenges facing database professionals."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "240",
+    "title": " Advanced Software Construction",
+    "code": "C S 240",
+    "credits": 4,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Advanced software development with an object-oriented focus. Design, implementation, and testing of medium-sized programs including a server program.",
+    "whenTaught": [
+      "All Semesters/Terms"
+    ],
+    "prereqText": "or instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "09200-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/09200-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Construction",
+        "objective": "Learn to construct a medium-scale server program with data persistence in a principled way by applying relevant engineering techniques such as up-front design, quality code construction, unit testing, assertions, and error handling."
+      },
+      {
+        "name": "Design",
+        "objective": "Learn and apply basic software design principles such as single responsibility, low coupling, avoidance of code duplication and information/data hiding to create modular code."
+      },
+      {
+        "name": "Databases",
+        "objective": "Learn and apply the basics of relational database design, modeling and programmatic access."
+      },
+      {
+        "name": "Security",
+        "objective": "Learn and apply basic security principles and concepts."
+      },
+      {
+        "name": "Testing",
+        "objective": "Learn to validate a program’s behavior against its specification using testing practices."
+      },
+      {
+        "name": "Tools",
+        "objective": "Use modern software tools including integrated development environments, testing frameworks, debuggers, version control, and documentation processing tools."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "450",
+    "title": "Computer Vision",
+    "code": "C S 450",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduction to fundamental concepts and algorithms of computer vision, including feature extraction, detection, segmentation, registration, recognition, motion, 3D vision, and image understanding. Applies techniques from image processing, geometry, Bayesian methods, optimization, and machine learning to computer vision problems.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"anyOf\", \"subRules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"01499-002\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"LO0g7AWsXqHj8RUYZoYR\"}, {\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"01499-002\", \"13764-000\", \"13765-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"mAmFIaurPPcGWnOX54YH\"}], \"name\": \"Prerequisites\", \"id\": \"DtgLou23pGuKHHEx0gW2\"}], \"id\": \"5cmeJ6xA1bWShaECMWh9\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "09201-001",
+    "catalogUrl": "https://catalog.byu.edu/courses/09201-001",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Introduction to Digital Signal and Image Processing",
+        "objective": "Understand and apply the following:\n\nSampling and quantization of image information\nCamera properties and the acquisition of images\nMathematics of image-space transformations\nFourier transforms and filtering\n"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "456",
+    "title": "Mobile and Ubiquitous Human-Computer Interaction",
+    "code": "C S 456",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Iterative user experience design for mobile and ubiquitous computing with an emphasis on conceptualization and prototyping in specific contexts. Complete an open-ended project from initial design through functional prototype, with design and critique sessions.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"12328-001\"]}], \"subSelections\": [], \"id\": \"FYXa3jOC\"}, \"name\": \"Prerequisites\", \"id\": \"j3LnijbktpOPVhOLHuF8\"}], \"id\": \"SvUPd746IN7Kzmx06B6Q\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "09202-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/09202-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Needs analysis",
+        "objective": "Characterize user needs in a specific context using inductive research methods"
+      },
+      {
+        "name": "Mobile sensors",
+        "objective": "Implement mobile phone applications that use sensors found in a mobile phone"
+      },
+      {
+        "name": "Screenless applications",
+        "objective": "Implement screenless applications using small portable computers"
+      },
+      {
+        "name": "Theory",
+        "objective": "Discuss important issues in mobile and ubiquitous computing in the context of relevant theories."
+      },
+      {
+        "name": "Evaluation of prototypes",
+        "objective": "Characterize strengths and weaknesses of an interactive system based on user-centric evaluation."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "462",
+    "title": "Large-Scale Distributed System Design",
+    "code": "C S 462",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Principles and concepts of designing and building distributed systems.  Introduction to architectures for distributed computation.  Reliability, availability, and scalability of large applications.  Cloud computing and APIs.",
+    "whenTaught": [
+      "Contact Department"
+    ],
+    "prereqText": " or equivalent experience.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "10117-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/10117-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Computational Practice",
+        "objective": "\nStudents can implement programming projects that display knowledge of a variety of distributed system architectural styles. Some of these assignments represent significant programming projects with wide leeway in design and implementation choices.\nStudents will analyze problems, determine solutions within an assigned architectural style, and successfully implement those solutions.\nStudents will design and implement projects both individually and as part of a team.\nStudents will use cloud-based systems to run and implement assignments\nStudents will manage a cloud-based Web server and properly configure it.\n"
+      },
+      {
+        "name": "Computational Theory",
+        "objective": "Students will understand the proper use of distributed and decentralized architectures and algorithms including\n\nRESTful APIs\nHierarchical vs heterarchical system architectures\nMapReduce\nDistributed Hash Tables\nEvent-driven system\nPeer-to-peer architectures including Paxos, gossip protocols, and blockchain\n\nStudents will understand theoretical concepts and limitations of distributed systems including\n\nnetwork practicalities such as latency, bandwidth, topology, cost, heterogeneity, security\nCAP theorem\ndistributed transactions\nserialization\nidentity and naming\ncryptography\nsimultaneity\n"
+      },
+      {
+        "name": "Critical Thinking and Communication",
+        "objective": "Students will interact with peers in meaningful discussion, lead discussions in peer groups, prepare written reports, and make oral presentations."
+      },
+      {
+        "name": "Ethics and Computing",
+        "objective": "Students will be presented with societal outcomes of technological choices in distributed and decentralized systems, analyze those outcomes, explore possible alternatives from different choices, and present their findings in small groups."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "224",
+    "title": "Introduction to Computer Systems",
+    "code": "C S 224",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "How a computer works to execute sequential code: low level data representation and abstraction, the relationship between C and assembly, computer architecture and pipelining, the memory hierarchy, dynamic memory allocation, and linking.\\n",
+    "whenTaught": [
+      "Fall",
+      "Winter",
+      "Summer"
+    ],
+    "prereqText": "or instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "10178-002",
+    "catalogUrl": "https://catalog.byu.edu/courses/10178-002",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Binary Computations",
+        "objective": "Ability to perform simple computations in binary."
+      },
+      {
+        "name": "C Programming",
+        "objective": "Ability to program in C."
+      },
+      {
+        "name": "Assembly Programming",
+        "objective": "Ability to program in assembly."
+      },
+      {
+        "name": "Translating C code to Assembly",
+        "objective": "Ability to describe how a compiler translates C code to assembly."
+      },
+      {
+        "name": "Computer Operation",
+        "objective": "Ability to describe the operation of a computer at the micro-architectural level"
+      },
+      {
+        "name": "Boolean Logic",
+        "objective": "Perform computations using Boolean logic"
+      },
+      {
+        "name": "Translate Boolean",
+        "objective": "Translate Boolean logic to transistor circuitry"
+      },
+      {
+        "name": "Circuitry",
+        "objective": "Use combinational and sequential circuitry to implement an instruction set architecture"
+      },
+      {
+        "name": "Computer Architecture",
+        "objective": "Ability to describe the high level organization and operation of a computer, e.g. the von Neumann model"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "404",
+    "title": "Ethics and Computers in Society",
+    "code": "C S 404",
+    "credits": 2,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Societal impact of computer technology, the computer scientist's place in society, ethical issues.  Reading, discussion, and writing seminar.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"09200-000\", \"01857-008\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"Udo5AWPT9kMcAufwusPf\"}], \"id\": \"Nam1jYkl6JYrhHFC4pvU\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "10181-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/10181-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Ethics",
+        "objective": "Analyze, write about, and discuss issues and ethical problems related to computing and the application of evolving technologies in society."
+      },
+      {
+        "name": "History of Computing",
+        "objective": "Appreciate the history of computing as a means for students to sharpen their sense of their own future."
+      },
+      {
+        "name": "Continuing Education",
+        "objective": "Students will understand the need for continuing education in their careers."
+      },
+      {
+        "name": "Presenting Ideas",
+        "objective": "Students will be able to effectively present their ideas."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "465",
+    "title": "Computer Security",
+    "code": "C S 465",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduction to computer security fundamentals: confidentiality, integrity, authentication, and access control. Secret key and public key cryptography, network security protocols, viruses, and fire walls.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "or concurrent enrollment.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "10321-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/10321-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Build a system",
+        "objective": "Implement a cryptographic algorithm from a standards specification."
+      },
+      {
+        "name": "Break and fix a system",
+        "objective": "Demonstrate how attackers compromise real-world systems, and then show how to prevent these attacks."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "472",
+    "title": "Introduction to Machine Learning",
+    "code": "C S 472",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Machine learning models and other mechanisms allowing computers to learn and find knowledge from data.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"anyOf\", \"subRules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"01499-002\", \"13765-000\", \"05604-032\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"c04fqPQSKD7pp8dC7Rtl\"}, {\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"01499-002\", \"13765-000\", \"05620-005\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"DBEKI8R8FYaoFi9Kjq0w\"}, {\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"01499-002\", \"05604-032\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"CTW0NekTeU0QMTT1YSO9\"}], \"name\": \"Prerequisites\", \"id\": \"0xoLtyFNmIIX2CLeGgzM\"}], \"id\": \"V5KGv37ixCDen2Iv75Y3\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "10322-004",
+    "catalogUrl": "https://catalog.byu.edu/courses/10322-004",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Recognize",
+        "objective": "You will be able to recognize when machine learning and data mining tools are applicable."
+      },
+      {
+        "name": "Execute",
+        "objective": "You will be able to plan and execute successful machine learning and data mining projects, including selecting an adequate process for your specific task and avoiding the main machine learning pitfalls."
+      },
+      {
+        "name": "Use Effective Machine Learning Techniques",
+        "objective": "You will learn the basic theory and models used in machine learning"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "235",
+    "title": "Data Structures and Algorithms",
+    "code": "C S 235",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Fundamental data structures and algorithms of computer science; basic algorithm analysis; recursion; sorting and searching; lists, stacks, queues, trees, hashing; object-oriented data abstraction.",
+    "whenTaught": [
+      "Fall",
+      "Winter",
+      "Spring"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"anyOf\", \"subRules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"01489-002\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"VJmSfYUhvwGBxoQMlEYO\"}, {\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"14243-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"sS1iak6hrFpSE7ifBMWo\"}], \"name\": \"Prerequisites\", \"id\": \"taPkiznFE5cgp07EBIO2\"}], \"id\": \"7B7BHEvqnDvO4h1gSH7x\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "10648-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/10648-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Data Computing Fundamentals",
+        "objective": "Use the fundamental data types of computing (lists, stacks, queues, priority queues, sets, maps, trees, etc.)."
+      },
+      {
+        "name": "Implementing Fundamental Data Types",
+        "objective": "Understand the major techniques for implementing the fundamental data types (linked lists, binary search trees, hashing, heaps, etc.) and implement several of them."
+      },
+      {
+        "name": "Select Data Structures",
+        "objective": "Properly use and select data structures from language-provided data-structure libraries."
+      },
+      {
+        "name": "Analysis",
+        "objective": "Apply basic algorithm analysis."
+      },
+      {
+        "name": "Recursion",
+        "objective": "Understand how recursion works and write programs using recursion to solve problems."
+      },
+      {
+        "name": "Usage of Algorithms",
+        "objective": "Make informed decisions about which sorting and searching algorithms to use in specific circumstances."
+      },
+      {
+        "name": "Program Writing",
+        "objective": "Write programs that require ~500 lines of code."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "236",
+    "title": "Discrete Structures",
+    "code": "C S 236",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduction to grammars and parsing; predicate and propositional logic; proof techniques; sets, functions, relations, relational data model; graphs and graph algorithms.",
+    "whenTaught": [
+      "Fall",
+      "Winter",
+      "Spring"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"10648-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"hqMkqIylwf4WHaT4SIv0\"}], \"id\": \"QpY5TJSCEcGiQqH1vsPn\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "10649-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/10649-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Write Code From Diverse Program Components",
+        "objective": "Demonstrate ability to build large programs by writing and integrating code from a diverse spectrum of program components."
+      },
+      {
+        "name": "Use Mathematical Structures to Solve Programming Problems",
+        "objective": "Understand and be conversant with basic discrete mathematical structures (finite state machines, regular expressions, grammars, propositional calculus, proof techniques, predicate calculus, sets, relations, functions, graphs).Write complex programs by using mathematical concepts as the basis for solving programming problems (finite state machines for lexical analysis; grammars for parsing; propositional and predicate calculus for logic programming; sets and algebras for relational databases; algebras, graphs, and topological sorting for optimizing datalog query processing).Incrementally build sophisticated programs by a systematic design process based on discrete mathematics.Design a solution for a programming problem and justify the design as one that is maintainable and extendable by other programmers who understand and are conversant with discrete mathematical structures."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "501R",
+    "title": "Advanced Topics in Computer Science",
+    "code": "C S 501R",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Advanced undergraduate- and graduate-level subjects as announced before each semester.",
+    "whenTaught": [
+      "Fall"
+    ],
+    "prereqText": "Instructor's consent",
+    "coreqText": "",
+    "repeatableForCredit": true,
+    "courseId": "10939-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/10939-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Advanced topic in Computer Science",
+        "objective": "Students will learn a topic in Computer Science not covered by the regular curriculum."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "401R",
+    "title": "Topics in Computer Science",
+    "code": "C S 401R",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Undergraduate level subjects as announced before each semester.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "Instructor's consent",
+    "coreqText": "",
+    "repeatableForCredit": true,
+    "courseId": "10951-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/10951-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Special Topics",
+        "objective": "Students will learn about a topic in Computer Science not covered in the traditional courses."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "486",
+    "title": "Verification and Validation",
+    "code": "C S 486",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Foundational topics in verification and validation; the application of logic to building correct systems. Covers logics to formally specify properties of systems, verifications of basic systems, and advanced topics in formal verification for complex systems.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"01499-002\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"5P6pj7XzyVfWnQdOQ3ZK\"}], \"id\": \"8bdn1AnIL5FB7Pz4u3ya\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "10952-003",
+    "catalogUrl": "https://catalog.byu.edu/courses/10952-003",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Formally reason about concurrent systems and executions",
+        "objective": "Formally reason about concurrent systems and executions"
+      },
+      {
+        "name": "Define correctness in concurrent systems",
+        "objective": "Define basic correctness principles of concurrent systems including deadlock, live-lock, safety, and general liveness."
+      },
+      {
+        "name": "Analyze concurrent objects for correctness",
+        "objective": "Use tools to analyze concurrent objects for correctness and performance"
+      },
+      {
+        "name": "Learn best-practices for spin locks and monitors",
+        "objective": "Learn best-practices for spin locks and monitors"
+      },
+      {
+        "name": "Discuss wait-free versus lock-free implementations",
+        "objective": "Compare and contrast wait-free and lock-free properties in concurrent objects"
+      },
+      {
+        "name": "Understand and use concurrent data structures",
+        "objective": "Understand and use concurrent data structures"
+      },
+      {
+        "name": "Correctly use barriers and fences",
+        "objective": "Correctly use barriers and fences"
+      },
+      {
+        "name": "Have working knowledge of tools and techniques for testing c",
+        "objective": "Have working knowledge of tools and techniques for testing concurrent programs"
+      },
+      {
+        "name": "Be familiar to libraries to support concurrent programming i",
+        "objective": "Be familiar to libraries to support concurrent programming in C, C , C#, and Java"
+      },
+      {
+        "name": "Describe future trends in multi-processor programming",
+        "objective": "Describe future trends in multi-processor programming"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "412",
+    "title": "Linear Programming and Convex Optimization",
+    "code": "C S 412",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Optimization, problem formulation, and solution algorithms, including simplex and interior point methods.  Applications from control, data mining, finance, game theory, learning, network flow, operations research, and statistical estimation.",
+    "whenTaught": [
+      "Contact Department"
+    ],
+    "prereqText": "or instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "11187-001",
+    "catalogUrl": "https://catalog.byu.edu/courses/11187-001",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Mathematical Foundations",
+        "objective": "Develop a fluency in the mathematical foundations needed to pose optimization problems, including an appreciation for the role of convexity in characterizing solvable problems."
+      },
+      {
+        "name": "Simplex Method",
+        "objective": "Develop a fluency with the Simplex Method as a solution technique to Linear Programming problems. Understand how it exploits the linear nature of the problem to yield good average-case performance while failing to be efficient in the worst-case."
+      },
+      {
+        "name": "Sensitivity Analysis",
+        "objective": "Be able to characterize how to perturb the data of an existing problem so that its solution remains optimal for the new, perturbed problem."
+      },
+      {
+        "name": "Applications",
+        "objective": "Explore the role of Linear and Convex Programming in a variety of applications, including 1) Finance, 2) Game Theory, 3) Regression, and 4) Computer Networking."
+      },
+      {
+        "name": "Interior Point Methods",
+        "objective": "Develop a fluency with interior point methods for solving Linear Programming problems and understand how these solutions may be extended to solve nonlinear, convex optimization problems."
+      },
+      {
+        "name": "Duality Theory",
+        "objective": "Understand the meaning of weak and strong duality and their role in the design and verification of algorithmic solutions to optimization problems."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "405",
+    "title": "Creating and Managing a Software Business",
+    "code": "C S 405",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Entrepreneurship, idea/opportunity generation, strategic planning, legal organization, product development, marketing/sales, customer support, fund raising, and effective management.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"09200-000\", \"01857-008\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"epf7e8PZEzp5koDe5bml\"}], \"id\": \"bg08sbWoDkPqqWvRupp2\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "11295-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/11295-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Business Plan",
+        "objective": "Students will write a business plan for a company they are proposing."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "301R",
+    "title": "Topics in Computer Science",
+    "code": "C S 301R",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Undergraduate-level topics as announced.",
+    "whenTaught": [
+      "Fall"
+    ],
+    "prereqText": "Instructor's consent",
+    "coreqText": "",
+    "repeatableForCredit": true,
+    "courseId": "11439-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/11439-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Data gathering",
+        "objective": "Because 301R is an experiment course, data on how well the course accomplished the outcomes will be gathered. &nbsp;This will usually be in the form of surveys, exam scores, and project scores."
+      },
+      {
+        "name": "Experimental course",
+        "objective": "A 301R course is used by a professor who is teaching an experimental course. &nbsp;Learning outcomes will vary for the course, but these outcomes are evaluated during the vetting process (through the department undergraduate curriculum committee) before the professor is allowed to teach the course. &nbsp;At this level, typical learning outcomes involve computing practice, critical thinking, and more advanced theory."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "340",
+    "title": "Software Design",
+    "code": "C S 340",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Use design, development, testing and refactoring techniques to build and evolve reliable, maintainable and scalable software systems. Covers a wide range of design patterns and principles. Also introduces students to software architecture and architectural patterns.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"09200-000\", \"13420-000\"]}], \"subSelections\": [], \"id\": \"YseAnCbg\"}, \"name\": \"Prerequisites\", \"id\": \"t7m1v3NFBVqn6usrx7nQ\"}], \"id\": \"2QYF53W0nfvz9SBgad9T\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "11440-001",
+    "catalogUrl": "https://catalog.byu.edu/courses/11440-001",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Design Judgement",
+        "objective": "Know when and how to apply various design patterns."
+      },
+      {
+        "name": "Software Design Principles",
+        "objective": "Understand the principles of effective software design."
+      },
+      {
+        "name": "Document and Communicate Designs",
+        "objective": "Learn to effectively document and communicate software designs."
+      },
+      {
+        "name": "Cloud Computing Technologies",
+        "objective": "Gain experience implementing software designs using cloud computing technologies."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "513",
+    "title": "Robust Control",
+    "code": "C S 513",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduction to the analysis and design of feedback systems guaranteed to perform well in spite of model uncertainty.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"13764-000\", \"13765-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"gUFNaS8gKrQtougPHWXw\"}], \"id\": \"4AToXBVAWHYhjMQ49nbC\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "11441-002",
+    "catalogUrl": "https://catalog.byu.edu/courses/11441-002",
+    "expectedLearningOutcomes": [
+      {
+        "name": "LMIs",
+        "objective": "Understand Linear Matrix Inequalities and their role in various identification and control problems."
+      },
+      {
+        "name": "Systems Concepts",
+        "objective": "Understand system concepts of stability, controllability, observability, minimality, behavior, and structure."
+      },
+      {
+        "name": "Representation",
+        "objective": "Understand various mathematical representations of systems."
+      },
+      {
+        "name": "Four Basic Problems",
+        "objective": "Understand the four basic problems: Model Reduction (i.e. Approximation), System Identification (i.e. Learning), Control (i.e. Decision Making), and Verification/Validation, and how they impact each other."
+      },
+      {
+        "name": "Hankel Singular Values",
+        "objective": "Understand Hankel singular values and their role in balanced truncation as an approximation to optimal model reduction."
+      },
+      {
+        "name": "Small Gain",
+        "objective": "Understand the role of the Small Gain Theorem and Passivity in providing guarantees of algorithm correctness in spite of model uncertainty."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "453",
+    "title": "Fundamentals of Information Retrieval",
+    "code": "C S 453",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Concepts and terminology of information retrieval (IR) systems.  Design methodologies and issues.  Fundamental IR models examined:  Boolean, Vector Space, Probabilistic models, and evaluation strategies.",
+    "whenTaught": [
+      "Spring Term"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"09200-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"PT2El102W49Zq3rcg8kk\"}], \"id\": \"HXk9l6b34oBx6dKRbIod\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "11823-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/11823-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Understand and evaluate fundamental IR models",
+        "objective": "\nBoolean\nVector Space\nProbabilistic\n"
+      },
+      {
+        "name": "Query Construction",
+        "objective": "Represent user's information needs, refine user's queries, and construct query results using snippets and categories"
+      },
+      {
+        "name": "Query Processing",
+        "objective": "Extract, parse, index, and classify source information for query processing&nbsp;"
+      },
+      {
+        "name": "Machine Learning",
+        "objective": "Categorize, cluster, and filter query results using various supervised and unsupervised learning strategies"
+      },
+      {
+        "name": "Analysis",
+        "objective": "Evaluate the effectiveness, efficiency, and cost of performing searches using search engines"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "500",
+    "title": "(C S-Chem-Geol-Math-MthEd-Phscs-Stat) Business Career Essentials in Science and Math",
+    "code": "C S 500",
+    "credits": 1.5,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduction for science, math, and statistics majors to careers in industry. Project planning, oral and written business presentations, business accounting, and technology readiness.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "11910-008",
+    "catalogUrl": "https://catalog.byu.edu/courses/11910-008",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Project Management",
+        "objective": "Learn the basics of project management and understand why this is important to business success"
+      },
+      {
+        "name": "Business Presentations and Writing",
+        "objective": "Learn the basics of effective business presentations and writing"
+      },
+      {
+        "name": "Technology Readiness",
+        "objective": "Understand the different levels of technology readiness and the process of moving a project through these levels to completion"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "356",
+    "title": "Advanced Techniques in Human Computer Interaction",
+    "code": "C S 356",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "This class combines designing the user experience with implementing the technology. Students learn website design, information architecture, and how to design for the broader ecosystem of use. Finally, students will learn principles specifically relevant to website design and information architecture. Web design is one of the most common UX jobs and so this makes their skills highly marketable.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"value\": [\"OrDuSOiqhvX4Rz3I3WJr\"], \"logic\": \"and\"}, {\"value\": [\"13420-000\"], \"logic\": \"and\"}], \"subSelections\": [], \"id\": \"BbGQx45x\"}, \"name\": \"Prerequisites\", \"id\": \"pmP4WRCvjVu2tDvFrMOz\"}], \"id\": \"ip2uxcmmEkTZ2IiuduyD\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "12328-001",
+    "catalogUrl": "https://catalog.byu.edu/courses/12328-001",
+    "expectedLearningOutcomes": [
+      {
+        "name": " Analyze the Context of a Design Problem",
+        "objective": "Students will learn how to analyze secondary data related to their design problem in order to understand the context in which people are using a given technology. Namely, this class goes beyond just interviewing users and to analyzing multiple sources of data that helps them understand the context in which the users are using the technology. This could include analyzing bug report, comments on social media, Q&A forums, other documentation about the topic, interview transcripts from multiple sets of stakeholders (e.g., users v. non users)."
+      },
+      {
+        "name": "Design the Different Stakeholders.",
+        "objective": "Students will be able to apply methods such as Personas to represent multiple stakeholders who are affected by the technology. This will allow them to analyze the characteristics of and segment the target population."
+      },
+      {
+        "name": "Apply Advanced Design Principles",
+        "objective": "Understand and apply design patterns and theories of information to the design of an online systerm."
+      },
+      {
+        "name": "Implement Functional Prototype",
+        "objective": "Students will be able to specify and implement/create a functional prototype that improves on the user experience of the design problem."
+      },
+      {
+        "name": "Evaluate Design Improvement",
+        "objective": "Students will be able to compare different designs to determine which has a better user experience using techniques such as A/B testing. This could be comparing the existing website that they have been analyzing, with a newly proposed/implemented website design for the same organization."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "355",
+    "title": "Interactive Graphics and Image Processing",
+    "code": "C S 355",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduces basic concepts of computer graphics and image processing. Includes characteristics of physical cameras and displays; color models; basic image processing algorithms: 2D and 3D homogeneous coordinate transformations; fundamentals of 3D rendering geometry; lighting and shading: image warping and texture mapping; and frequency-domain processing.",
+    "whenTaught": [
+      "Fall"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"anyOf\", \"subRules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"09200-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"lJUMxlvy5JH3GIgCDDOm\"}, {\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"09200-000\", \"13764-000\", \"13765-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"Z0zPrHKgGpLgUf6ELiPc\"}], \"name\": \"Prerequisites\", \"id\": \"JHf0beB4zrIGSQa0wqla\"}], \"id\": \"vMQqPcG6MBz8GGHJiCAO\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "12329-002",
+    "catalogUrl": "https://catalog.byu.edu/courses/12329-002",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Mathematics and Geometry",
+        "objective": "Use and implement the fundamental mathematical concepts underlying these areas, including\n\nPoints, vectors, and matrices\nOther basic principles of linear algebra\nGeometric transformations as matrices\nMethods for working with numeric data\n"
+      },
+      {
+        "name": "Graphical User Interfaces",
+        "objective": "Use and implement concepts of current graphical user interfaces (which you should have seen before), including\n\nModel-view-controller architecture\nEvent handling\nScreen management\n"
+      },
+      {
+        "name": "2D Drawing, Viewing, and Selection",
+        "objective": "Use and implement the following concepts for 2D drawing, viewing, and selection:\n\nGeometry of simple shapes\n2D Transformations\nTransformation composition\n"
+      },
+      {
+        "name": "3D Rendering Geometry",
+        "objective": "Understand and implement the fundamental geometry involved in 3-D perspective rendering, including\n\nUse rendering libraries such as OpenGL to do simple rendering\nImplement the geometric transformations used in 3D rendering\nIdentify basic techniques for shading and their advantages and limitations\n"
+      },
+      {
+        "name": "Basic Image Processing",
+        "objective": "Understand and implement fundamental image processing operations, including&nbsp;\n\nPoint operations (brightness, contrast, etc.)\nImage-Image operations (differencing, alpha blending, etc.)\nNeighborhood operations (noise removal, edge detection, etc.)\n"
+      },
+      {
+        "name": "Geometric Operations on Images",
+        "objective": "Understand and implement image warping using a backwards-mapping approach"
+      },
+      {
+        "name": "Color",
+        "objective": "Understandand use the language and principles of common color models"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "498R",
+    "title": "Undergraduate Special Projects",
+    "code": "C S 498R",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Students identify an interesting problem in computer science and solve it with the aid of faculty members.",
+    "whenTaught": [
+      "All Semesters/Terms"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"09200-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"qicYQMgyHfMDQ3d2OPaX\"}], \"id\": \"dZYY036eSgKLPXr9izq5\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": true,
+    "courseId": "12417-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/12417-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Capstone Experience in a Special Topic",
+        "objective": "Students will propose, execute, and report a capstone project in an area that they choose in consultation with a professor. Each project is approved by the Undergraduate Curriculum Committee."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "201R",
+    "title": "Topics in Computer Science",
+    "code": "C S 201R",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Undergraduate level subjects as announced before each semester.",
+    "whenTaught": [
+      "Fall"
+    ],
+    "prereqText": "Instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": true,
+    "courseId": "12529-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/12529-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Data gathering",
+        "objective": "Because 201R is an experiment course, data on how well the course accomplished the outcomes will be gathered. &nbsp;This will usually be in the form of surveys, exam scores, and project scores."
+      },
+      {
+        "name": "Experimental course",
+        "objective": "A 201R course is used by a professor who is teaching an experimental course. &nbsp;Learning outcomes will vary for the course, but these outcomes are evaluated during the vetting process (through the department undergraduate curriculum committee) before the professor is allowed to teach the course. &nbsp;At this level, typical learning outcomes involve computing practice and fundamental theory."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "260",
+    "title": "Web Programming",
+    "code": "C S 260",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduction to building and deploying full stack web applications using core technologies, frameworks, protocols, and development tools.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAnyOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"value\": [\"01489-002\", \"14243-000\"], \"logic\": \"or\"}], \"subSelections\": [], \"id\": \"SrdNIrFr\"}, \"name\": \"Prerequisites\", \"id\": \"9ivjvH9vvnV5WYsYm6Un\", \"restriction\": 1}], \"id\": \"LSt4ZSZXtIf2ZR4S86QS\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13420-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13420-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Web Pages",
+        "objective": "Create interactive web applications using HTML, CSS, and JavaScript."
+      },
+      {
+        "name": "Web Frameworks",
+        "objective": "Modularize, build, and package an application using a web framework."
+      },
+      {
+        "name": "Web Services",
+        "objective": "Create a backend service using DNS, HTTPS, WebSocket, service endpoints, authentication, and data persistence."
+      },
+      {
+        "name": "Infrastructure",
+        "objective": "Deploy applications and manage code."
+      },
+      {
+        "name": "Security and Design",
+        "objective": "Appreciate production web application security and design practices."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "324",
+    "title": "Systems Programming",
+    "code": "C S 324",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Systems programming principles and concepts, including Linux systems programming, multiprocessing, concurrency, exceptional control flow, caching, sockets, protocols, and non-blocking I/O.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"10178-002\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"aRiZ6kFqtACbX4zybJmX\"}], \"id\": \"Ew61ObswyHOVgIPWDjDQ\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13421-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13421-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Demonstrate Linux Systems Programming",
+        "objective": "Use Linux APIs and command line"
+      },
+      {
+        "name": "Demonstrate multiprocessing, concurrency and exceptional control flow",
+        "objective": "Write programs that use concurrency"
+      },
+      {
+        "name": "Analyze caching, sockets and non-blocking I/O",
+        "objective": "Write programs and analyze their performance"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "494",
+    "title": "Capstone 1",
+    "code": "C S 494",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, test, and demonstrate a major project.",
+    "whenTaught": [
+      "Contact Department"
+    ],
+    "prereqText": "Minimum 3.0 CS GPA or instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13422-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13422-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Students will design and implement software",
+        "objective": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, implement, test, and demonstrate a major project."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "495",
+    "title": "Capstone 2",
+    "code": "C S 495",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "The second semester of a culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, test, and demonstrate a major project.",
+    "whenTaught": [
+      "Contact Department"
+    ],
+    "prereqText": "Minimum 3.0 CS GPA or instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13423-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13423-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Students will design and implement software",
+        "objective": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, implement, test, and demonstrate a major project."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "497R",
+    "title": "Undergraduate Research",
+    "code": "C S 497R",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Students receive course credit for doing undergraduate research under the supervision of a faculty mentor.",
+    "whenTaught": [
+      "All Semesters/Terms"
+    ],
+    "prereqText": "Students must turn in signed research agreement at least 1 business day before add/drop deadline in order to receive permission-to-add code. Research agreement form can be found at&#160;<a href=\"http://cs.byu.edu\" target=\"_blank\">http://cs.byu.edu</a> or in the CS Department office.",
+    "coreqText": "",
+    "repeatableForCredit": true,
+    "courseId": "13424-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13424-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Students will gain research skills",
+        "objective": "Students work in a laboratory and develop research skills"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "493R",
+    "title": "Computing Competitions",
+    "code": "C S 493R",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Students work in teams to prepare for and compete in computer science competitions in areas such as programming, data science, and ethical hacking.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "Minimum 3.0 C S GPA or instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": true,
+    "courseId": "13435-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13435-000",
+    "expectedLearningOutcomes": [],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "477R",
+    "title": "Secondary Minor Student Teaching",
+    "code": "C S 477R",
+    "credits": 4,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Supervised, full-day, four week experience to develop and demonstrate competence in teaching minor area course content in the secondary classroom.",
+    "whenTaught": [
+      "Fall",
+      "Winter",
+      "Spring"
+    ],
+    "prereqText": "Sc Ed 477R or minor area equivalent; admittance to teaching area; FBI fingerprint background clearance.",
+    "coreqText": "",
+    "repeatableForCredit": true,
+    "courseId": "13460-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13460-000",
+    "expectedLearningOutcomes": [],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "329",
+    "title": "Quality Assurance and Developer Operations",
+    "code": "C S 329",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Comprehensive production software testing, deployment, and management strategies, focusing on automation, security, quality assurance, continuous integration/deployment, scalability, and resilience.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"13420-000\"]}], \"subSelections\": [], \"id\": \"s8iSKFHS\"}, \"name\": \"Prerequisites\", \"id\": \"4ziZQytTboblDH8DRZAc\"}], \"id\": \"qYBtwOCR8EQoBCK8SKGk\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13780-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13780-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Quality",
+        "objective": "Implement comprehensive automated testing strategies, including unit, UI, E2E, performance, and load testing."
+      },
+      {
+        "name": "Deployment",
+        "objective": "Deploy various automated CI/CD pipeline strategies to reliably deliver software that is resilient, scalable, and secure."
+      },
+      {
+        "name": "Management",
+        "objective": "Monitor, detect anomalies, alter, and automatically correct system behavior."
+      },
+      {
+        "name": "Curious",
+        "objective": "Characterize and address gaps in understanding related to DevOps techniques and principles."
+      },
+      {
+        "name": "Creative",
+        "objective": "Discuss and generate alternatives DevOps designs."
+      },
+      {
+        "name": "Collaborative",
+        "objective": "Work as a team to discover DevOps design weaknesses."
+      },
+      {
+        "name": "Christlike",
+        "objective": "Strive for divine inspiration for, and ability to apply capabilities to, celestial pursuits."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "474",
+    "title": "Introduction to Deep Learning",
+    "code": "C S 474",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Understand theory and practice of deep learning, drawing material from machine vision, machine translation, dynamical systems, audio processing, neural computing and human perception. Learn supporting mathematical concepts, including linear algebra, stochastic optimization, and hardware acceleration.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"id\": \"4jm0VYsu\", \"name\": \"Prerequisite \", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"id\": \"Ghu99o7Q\", \"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"value\": [\"01499-002\", \"10322-004\", \"12181-001\"], \"logic\": \"or\"}], \"id\": \"vmhZxUjB\", \"subSelections\": []}, \"name\": \"Prerequisite \"}], \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13781-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13781-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Analyze Deep Learning ",
+        "objective": "Theory and practice of modern deep learning and associated software frameworks. A broad look at the field, drawing on material from machine vision, machine translation, dynamical systems, audio processing, neural computing and human perception. Supporting mathematical concepts are also covered, including linear algebra, stochastic optimization, and hardware acceleration."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "202",
+    "title": "Software Engineering Lab 1",
+    "code": "C S 202",
+    "credits": 1,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "The first of three experiential learning labs that will provide students with hands-on experience with various tools, technologies, and techniques that software engineers use in practice. In addition to hands-on lab experiences, this course contains lecture and assigned reading content that will provide an understanding of what a software engineering career is and what roles and responsibilities are available to software engineers.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "With instructor consent, may be taken concurrently with C S 203 and 204.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13855-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13855-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Definition and roles",
+        "objective": "Know what software engineering is. Know the different roles within a software engineering career."
+      },
+      {
+        "name": "UI Design",
+        "objective": "Use a modeling tool to create wireframe and screenflow diagrams to represent a UI design."
+      },
+      {
+        "name": "Modeling",
+        "objective": "Create and understand UML Class, Sequence and Activity diagrams."
+      },
+      {
+        "name": "Code Reviews",
+        "objective": "Understand what code reviews are and why they are useful."
+      },
+      {
+        "name": "Documentation",
+        "objective": "Understand the importance of software documentation and use a tool to generate code level documentation."
+      },
+      {
+        "name": "Source Control",
+        "objective": "Understand why source control is needed and gain experience using a source control tool."
+      },
+      {
+        "name": "Coding Style",
+        "objective": "Know how to use tools to enforce coding style decisions."
+      },
+      {
+        "name": "Debugging",
+        "objective": "Be able to debug software programs, both from the command line and from an IDE using a debugger."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "203",
+    "title": "Software Engineering Lab 2",
+    "code": "C S 203",
+    "credits": 1,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "The second of three experiential learning labs that will provide students with hands-on experience with various tools, technologies, and techniques that software engineers use in practice. The lab experiences in this course build on those learned in CS 202 and focus on tools and techniques for source code testing, automated source code analysis, and source code build and dependency management.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "With instructor consent, may be taken concurrently with C S 202 and 204.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13856-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13856-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Analysis",
+        "objective": "Use static analysis tools to identify and correct potential code problems.  Understand what code profiling is and use a code profiler to identify performance trouble spots in a software program.  Use a testing tool to test application performance."
+      },
+      {
+        "name": "Management",
+        "objective": "Demonstrate how to use build and dependency management tools to manage a large, complex code base.  Link to Program Outcomes: None"
+      },
+      {
+        "name": "Testing",
+        "objective": "Understand the basic concepts and approaches used by software engineers to test software.  Use a testing framework to write automated unit tests.  Use a code coverage tool to assess code coverage."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "204",
+    "title": "Software Engineering Lab 3",
+    "code": "C S 204",
+    "credits": 1,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "The third of three experiential learning labs that will provide students with hands-on experience with various tools, technologies, and techniques that software engineers use in practice. The lab experiences in this course build on those learned in CS 202 and CS 203 and focus on tools and techniques for cloud development and Agile programming.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "With instructor consent, may be taken concurrently with C S 202 and 203.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13857-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13857-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Virtual Machines",
+        "objective": "Set up virtual machines and application containers to run applications for different operating systems on a single host."
+      },
+      {
+        "name": "Cloud Computing",
+        "objective": "Provision a simple web server on AWS.  Gain experience with AWS services."
+      },
+      {
+        "name": "Deployment",
+        "objective": "Use a tool to build a simple deployment pipeline."
+      },
+      {
+        "name": "Dependency Injection",
+        "objective": "Understand the benefits of dependency injection."
+      },
+      {
+        "name": "Object-relational Mapping",
+        "objective": "Gain experience with an object-relational mapping framework."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "480",
+    "title": "Software Engineering Capstone 1",
+    "code": "C S 480",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, implement, test, and demonstrate a major project.\\n",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "Minimum 3.0 CS GPA or instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13941-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13941-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Students will design and implement software",
+        "objective": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, implement, test, and demonstrate a major project."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "481",
+    "title": "Software Engineering Capstone 2",
+    "code": "C S 481",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, implement, test, and demonstrate a major project.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "Minimum 3.0 CS GPA or instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13942-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13942-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Students will design and implement software",
+        "objective": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, implement, test, and demonstrate a major project."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "482",
+    "title": "Data Science Capstone 1",
+    "code": "C S 482",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, implement, test, and demonstrate a major project.",
+    "whenTaught": [
+      "Fall"
+    ],
+    "prereqText": "Minimum 3.0 CS GPA or instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13943-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13943-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Students will design and implement a data science solution",
+        "objective": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, implement, test, and demonstrate a major project."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "483",
+    "title": "Data Science Capstone 2",
+    "code": "C S 483",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, implement, test, and demonstrate a major project.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "Minimum 3.0 CS GPA or instructor's consent.",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13944-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13944-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Students will design and implement a data science solution",
+        "objective": "Culminating experience based on skills learned in advanced technical courses. Students work in teams to plan, design, implement, test, and demonstrate a major project."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "502",
+    "title": "Job Search Strategies",
+    "code": "C S 502",
+    "credits": 1,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Course will assist graduating students in identifying and connecting to potential employers.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "13975-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/13975-000",
+    "expectedLearningOutcomes": [],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "180",
+    "title": "Introduction to Data Science",
+    "code": "C S 180",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "This course is a broad, interdisciplinary look at the field of data science, and how to derive insight from data.  It will develop technical skills (including some python programming, statistics, linear algebra, machine learning, data cleaning and visualization) as well as data literacy (mental frameworks for decomposing data science problems, critical thinking about potential conclusions of an analysis, and potential pitfalls of overreliance on unreliable data).",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "CS 110 or equivalent prior programming experience",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "14033-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/14033-000",
+    "expectedLearningOutcomes": [],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "393",
+    "title": "Collaborative Problem Solving",
+    "code": "C S 393",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Strengthen problem-solving skills through targeted practice to prepare for technical/coding interviews (a key challenge when job interviewing). Building on techniques from CS 312, learn to collaborate and quickly identify and apply appropriate strategies to problems.",
+    "whenTaught": [
+      "Fall and Winter"
+    ],
+    "prereqText": "or instructor consent",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "14034-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/14034-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Demonstrate problem solving",
+        "objective": "Students will be able to solve problems quickly to enable them to be competitive in technical lnterviews"
+      },
+      {
+        "name": "Build problem-solving strategies",
+        "objective": "Students will build on the algorithms and problem-solving strategies that they were taught and had limited practice with in CS 312. learning primarily through targeted practice."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "471",
+    "title": "Voice User Interfaces",
+    "code": "C S 471",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Methods and development platforms for Voice User Interfaces. Principles of effective design; differences from visual or menu-based interfaces’ mechanics of automatic speech recognition, intent detection, slot filling, dialog state tracking, text generation, and knowledge representation.",
+    "whenTaught": [
+      "Winter"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"id\": \"9icXS0cx\", \"name\": \"Prerequisites\", \"type\": \"Completion Requirement\", \"showInCatalog\": false, \"position\": 0, \"rules\": [{\"id\": \"soNL4Tcy\", \"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"value\": [\"01499-002\"], \"logic\": \"and\"}], \"id\": \"Jsgcy6C6\", \"subSelections\": []}}], \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "14035-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/14035-000",
+    "expectedLearningOutcomes": [
+      {
+        "name": "Develop a voice interface for a program",
+        "objective": "Methods and development platforms for Voice User Interfaces. Principles of effective design; differences from visual or menu-based interfaces' mechanics of automatic speech recognition, intent detection, slot filling, dialog state tracking, text generation, and knowledge representation."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "580",
+    "title": "Theory of Predictive Modeling",
+    "code": "C S 580",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Mathematical, computational, and philosophical foundations of machine learning, control, and physical modeling.  Introduction to system identification, causality, uncertainty, model approximation, and information geometry.",
+    "whenTaught": [
+      "Fall"
+    ],
+    "prereqText": "{\"requisitesSimple\": [{\"name\": \"Prerequisites\", \"type\": \"Prerequisite\", \"showInCatalog\": true, \"rules\": [{\"condition\": \"completedAllOf\", \"value\": {\"condition\": \"courses\", \"values\": [{\"logic\": \"and\", \"value\": [\"13764-000\", \"13765-000\"]}], \"subSelections\": []}, \"name\": \"Prerequisites\", \"id\": \"gELm0KdYUdmhkl3G3HD9\"}], \"id\": \"S9Admw3zk5FDpnuHpxHN\", \"sisId\": \"\"}]}",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "14084-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/14084-000",
+    "expectedLearningOutcomes": [],
+    "notes": ""
+  },
+  {
+    "subject": "C S",
+    "number": "110",
+    "title": "How to Program",
+    "code": "C S 110",
+    "credits": 3,
+    "college": "College of Computational, Mathematical, & Physical Sciences",
+    "department": "Computer Science",
+    "description": "Introduction to programming and computer science for those with no prior programming experience. Focuses on the basic aspects of programming, with an emphasis on core principles. Labs provide a supportive environment to learn how to program with peers. Weekly discussions will introduce some of the many ways computer science interacts with society. Programming assignments will demonstrate how to use computing in a variety of disciplines. \\n",
+    "whenTaught": [
+      "Fall",
+      "Winter",
+      "Spring"
+    ],
+    "prereqText": "",
+    "coreqText": "",
+    "repeatableForCredit": false,
+    "courseId": "14242-000",
+    "catalogUrl": "https://catalog.byu.edu/courses/14242-000",
+    "expectedLearningOutcomes": [],
+    "notes": ""
+  }
+]
