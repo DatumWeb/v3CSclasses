@@ -4,6 +4,7 @@
 "use client";
 
 import Link from "next/link";
+import { courseCodeToPathSegment } from "@/lib/coursePath";
 import { useCompletedCourses } from "@/context/CompletedCoursesContext";
 import type { Course } from "@/types/course";
 
@@ -49,7 +50,7 @@ export function CourseCard({ course }: CourseCardProps) {
           {completed ? "✓" : "○"}
         </button>
         <Link
-          href={`/course/${encodeURIComponent(course.code)}`}
+          href={`/course/${courseCodeToPathSegment(course.code)}`}
           className="min-w-0 flex-1 outline-none"
         >
           <div className="flex flex-wrap items-center gap-2">

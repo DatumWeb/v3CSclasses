@@ -5,6 +5,7 @@
 
 import Link from "next/link";
 import { useMemo } from "react";
+import { courseCodeToPathSegment } from "@/lib/coursePath";
 import { useCompletedCourses } from "@/context/CompletedCoursesContext";
 import {
   getPrereqCourses,
@@ -66,7 +67,7 @@ function TreeNodeView({ node }: { node: TreeNode }) {
               {completed ? "✓" : "○"}
             </button>
             <Link
-              href={`/course/${encodeURIComponent(node.course.code)}`}
+              href={`/course/${courseCodeToPathSegment(node.course.code)}`}
               className="min-w-0 flex-1"
             >
               <span className="font-mono font-bold text-[var(--text)]">

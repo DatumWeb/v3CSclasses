@@ -1,40 +1,30 @@
 /**
- * Course detail page.
+ * Course detail page. [slug] is a hyphenated course code (e.g. C-S-110), not URL encoding.
  */
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { CourseDetail } from "@/components/CourseDetail";
+import {
+  courseCodeToPathSegment,
+  findCourseByPathSegment,
+} from "@/lib/coursePath";
 import { loadCourses } from "@/lib/loadCourses";
 
 interface PageProps {
-  params: Promise<{ code: string }>;
+  params: Promise<{ slug: string }>;
 }
 
-/**
- * Use the same encoding as <Link href={`/course/${encodeURIComponent(code)}`}>.
- * With output: "export", dev requires param values to match the URL segment;
- * decoded "C S 111" does not match "C%20S%20111".
- */
 export function generateStaticParams() {
   const courses = loadCourses();
-  return courses.map((c) => ({ code: encodeURIComponent(c.code) }));
-}
-
-function decodeCourseParam(param: string): string {
-  try {
-    return decodeURIComponent(param);
-  } catch {
-    return param;
-  }
+  return courses.map((c) => ({ slug: courseCodeToPathSegment(c.code) }));
 }
 
 export default async function CoursePage({ params }: PageProps) {
-  const { code } = await params;
-  const decoded = decodeCourseParam(code);
+  const { slug } = await params;
   const courses = loadCourses();
-  const course = courses.find((c) => c.code === decoded);
+  const course = findCourseByPathSegment(courses, slug);
 
   if (!course) {
     notFound();
