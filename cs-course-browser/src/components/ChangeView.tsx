@@ -1,48 +1,46 @@
 /**
  * View switcher: List ↔ Tree.
- * Renders as a segmented control showing current view and switch target.
  */
 import Link from "next/link";
 
 interface ChangeViewProps {
   currentView: "list" | "tree";
-  /** When on course detail, pass to pre-select in tree */
   courseCode?: string;
 }
 
 export function ChangeView({ currentView, courseCode }: ChangeViewProps) {
   const treeHref = courseCode
-    ? `/tree?course=${encodeURIComponent(courseCode)}`
-    : "/tree";
+    ? `/tree/?course=${encodeURIComponent(courseCode)}`
+    : "/tree/";
 
   return (
     <div
-      className="inline-flex rounded-full border-2 border-gray-500 p-1.5"
+      className="inline-flex rounded-2xl border border-[var(--border)] bg-[var(--surface-muted)] p-1 shadow-sm"
       role="group"
       aria-label="Change view"
     >
       {currentView === "list" ? (
         <>
-          <span className="rounded-full bg-gray-800 px-5 py-2 text-base font-medium text-white">
+          <span className="rounded-xl bg-[var(--text)] px-5 py-2.5 text-sm font-semibold text-white shadow-sm">
             List
           </span>
           <Link
             href={treeHref}
-            className="rounded-full px-5 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-gray-100"
+            className="rounded-xl px-5 py-2.5 text-sm font-medium text-[var(--muted)] transition-colors hover:bg-white hover:text-[var(--text)]"
           >
-            Tree
+            Prereq tree
           </Link>
         </>
       ) : (
         <>
           <Link
             href="/"
-            className="rounded-full px-5 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-gray-100"
+            className="rounded-xl px-5 py-2.5 text-sm font-medium text-[var(--muted)] transition-colors hover:bg-white hover:text-[var(--text)]"
           >
             List
           </Link>
-          <span className="rounded-full bg-gray-800 px-5 py-2 text-base font-medium text-white">
-            Tree
+          <span className="rounded-xl bg-[var(--text)] px-5 py-2.5 text-sm font-semibold text-white shadow-sm">
+            Prereq tree
           </span>
         </>
       )}

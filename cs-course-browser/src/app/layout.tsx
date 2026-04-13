@@ -1,10 +1,27 @@
 import type { Metadata } from "next";
+import { DM_Sans, JetBrains_Mono } from "next/font/google";
 import { CompletedCoursesProvider } from "@/context/CompletedCoursesContext";
 import "./globals.css";
 
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "BYU CS Classes",
-  description: "Find information on BYU Computer Science courses",
+  title: {
+    default: "BYU CS Course Explorer",
+    template: "%s · BYU CS Course Explorer",
+  },
+  description:
+    "Browse BYU Computer Science courses: descriptions, prerequisites, schedules, and planning tools.",
 };
 
 export default function RootLayout({
@@ -13,8 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light">
-      <body className="bg-white text-gray-900 antialiased">
+    <html
+      lang="en"
+      className={`${dmSans.variable} ${jetbrainsMono.variable} light`}
+    >
+      <body className="flex min-h-screen flex-col antialiased text-[var(--text)]">
         <CompletedCoursesProvider>{children}</CompletedCoursesProvider>
       </body>
     </html>

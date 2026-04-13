@@ -1,10 +1,8 @@
 /**
- * BYU CS Classes - Information Architecture prototype
- * Bare-bones site to help students find CS class info.
+ * BYU CS Classes — course list and filters (CS 356 IA prototype, CSV3).
  */
-import { ChangeView } from "@/components/ChangeView";
-
-export const dynamic = "force-dynamic";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 import { CourseBrowser } from "@/components/CourseBrowser";
 import { loadCourses } from "@/lib/loadCourses";
 
@@ -12,19 +10,16 @@ export default function Home() {
   const courses = loadCourses();
 
   return (
-    <div className="min-h-screen border-t-4 border-gray-800 bg-white p-4">
-      <header className="mb-6 border-b border-gray-400 pb-4">
-        <div className="flex justify-center py-4">
-          <ChangeView currentView="list" />
-        </div>
-        <h1 className="font-mono text-2xl font-bold">BYU CS Classes</h1>
-        <p className="mt-1 text-sm text-gray-600">
-          Find information on Computer Science courses. Use search to filter.
-        </p>
-      </header>
-      <main className="max-w-2xl">
+    <div className="flex min-h-screen flex-col">
+      <SiteHeader
+        view="list"
+        title="Computer Science Courses"
+        description="Search and filter CS offerings, mark what you have completed, and see what you can take next. Data is unofficial—verify with the catalog."
+      />
+      <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 lg:px-8">
         <CourseBrowser courses={courses} />
       </main>
+      <SiteFooter />
     </div>
   );
 }

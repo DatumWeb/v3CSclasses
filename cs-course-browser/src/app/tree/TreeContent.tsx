@@ -3,9 +3,10 @@
  */
 "use client";
 
-import { Suspense, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import { ChangeView } from "@/components/ChangeView";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 import { PrereqTree } from "@/components/PrereqTree";
 import { CourseSelector } from "@/components/CourseSelector";
 import type { Course } from "@/types/course";
@@ -27,47 +28,52 @@ export function TreeContent({ courses }: TreeContentProps) {
   }, [courseCode, courses]);
 
   return (
-    <div className="min-h-screen border-t-4 border-gray-800 bg-white p-4">
-      <header className="mb-6 border-b border-gray-400 pb-4">
-        <div className="flex justify-center py-4">
-          <ChangeView currentView="tree" />
+    <div className="flex min-h-screen flex-col">
+      <SiteHeader
+        view="tree"
+        title="Prerequisite tree"
+        description="Pick a course to see its prerequisite chain, or browse entry points (courses with no prerequisites in this dataset)."
+      />
+      <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 lg:px-8">
+        <div className="mb-8 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-sm">
+          <p className="text-sm font-medium text-[var(--text)]">
+            Focus on one course
+          </p>
+          <p className="mt-1 text-sm text-[var(--muted)]">
+            Optional — narrows the tree to everything required before your
+            selection.
+          </p>
+          <div className="mt-4">
+            <CourseSelector
+              courses={courses}
+              value={selected}
+              onChange={setSelected}
+              placeholder="Browse all entry points…"
+            />
+          </div>
         </div>
-        <h1 className="font-mono text-2xl font-bold">
-          Prerequisite Tree
-        </h1>
-        <p className="mt-1 text-sm text-gray-600">
-          See what you need to complete before taking a course. Select a course to
-          focus on its prerequisite chain, or browse all entry points below.
-        </p>
-        <div className="mt-4">
-          <CourseSelector
-            courses={courses}
-            value={selected}
-            onChange={setSelected}
-            placeholder="Optional: select a course to focus on…"
-          />
-        </div>
-      </header>
-      <main className="max-w-2xl">
+
         {selected ? (
           <div>
-            <h2 className="mb-2 font-mono font-bold">
-              Prerequisites for {selected.code}
+            <h2 className="mb-4 font-mono text-lg font-bold text-[var(--text)]">
+              Prerequisites leading into {selected.code}
             </h2>
             <PrereqTree courses={courses} rootCourse={selected} />
           </div>
         ) : (
           <div>
-            <h2 className="mb-2 font-mono font-bold">
-              Entry points (no prerequisites)
+            <h2 className="mb-2 font-mono text-lg font-bold text-[var(--text)]">
+              Entry points
             </h2>
-            <p className="mb-4 text-sm text-gray-600">
-              Courses you can take first. Expand to see what leads where.
+            <p className="mb-6 text-sm text-[var(--muted)]">
+              Courses you can take first (no prerequisites in our data). Expand
+              downward to follow chains.
             </p>
             <PrereqTree courses={courses} rootCourse={null} />
           </div>
         )}
       </main>
+      <SiteFooter />
     </div>
   );
 }

@@ -1,7 +1,5 @@
 /**
  * Prerequisite tree visualization.
- * Shows what courses you need to complete before taking another.
- * Completed courses show with checkmark and strikethrough.
  */
 "use client";
 
@@ -17,7 +15,6 @@ import type { Course } from "@/types/course";
 
 interface PrereqTreeProps {
   courses: Course[];
-  /** If set, show tree rooted at this course (prereqs below). Otherwise show full forest. */
   rootCourse?: Course | null;
 }
 
@@ -41,56 +38,66 @@ function buildTree(
   return { course, children };
 }
 
-function TreeNodeView({
-  node,
-  depth,
-}: {
-  node: TreeNode;
-  depth: number;
-}) {
+function TreeNodeView({ node }: { node: TreeNode }) {
   const { isCompleted, toggleCompleted } = useCompletedCourses();
   const completed = isCompleted(node.course.courseId);
 
   return (
-    <div className="ml-4 border-l-2 border-gray-300 pl-3">
-      <div
-        className={`flex items-start gap-2 border p-2 ${
-          completed ? "border-green-600 bg-green-50" : "border-gray-400 bg-white"
-        } hover:bg-gray-50`}
-      >
-        <button
-          type="button"
-          onClick={() => toggleCompleted(node.course.courseId)}
-          className="shrink-0 rounded border border-gray-400 bg-white px-2 py-0.5 text-sm hover:bg-gray-100"
-          title={completed ? "Mark as not completed" : "Mark as completed"}
+    <div className="relative">
+      <div className="relative pl-6 before:absolute before:left-[11px] before:top-10 before:h-[calc(100%-2rem)] before:w-px before:bg-gradient-to-b before:from-[var(--border)] before:to-transparent last:before:hidden">
+        <div
+          className={`rounded-2xl border transition-[box-shadow] ${
+            completed
+              ? "border-[var(--success-border)] bg-[var(--success-surface)] shadow-sm"
+              : "border-[var(--border)] bg-[var(--surface)] shadow-sm hover:shadow-md"
+          }`}
         >
-          {completed ? "✓" : "○"}
-        </button>
-        <Link
-          href={`/course/${encodeURIComponent(node.course.code)}`}
-          className="min-w-0 flex-1"
-        >
-          <span className="font-mono font-bold">{node.course.code}</span>
-          <span
-            className={`ml-2 text-sm ${
-              completed ? "line-through text-gray-500" : ""
-            }`}
-          >
-            {node.course.title}
-          </span>
-          {completed && (
-            <span className="ml-2 text-xs text-green-600">(completed)</span>
-          )}
-        </Link>
+          <div className="flex items-start gap-3 p-4">
+            <button
+              type="button"
+              onClick={() => toggleCompleted(node.course.courseId)}
+              className={`mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border text-sm font-bold ${
+                completed
+                  ? "border-[var(--success)] bg-white text-[var(--success)]"
+                  : "border-[var(--border)] bg-[var(--surface-muted)] text-[var(--muted)] hover:border-[var(--accent)]"
+              }`}
+              title={completed ? "Mark as not completed" : "Mark as completed"}
+            >
+              {completed ? "✓" : "○"}
+            </button>
+            <Link
+              href={`/course/${encodeURIComponent(node.course.code)}`}
+              className="min-w-0 flex-1"
+            >
+              <span className="font-mono font-bold text-[var(--text)]">
+                {node.course.code}
+              </span>
+              <span
+                className={`mt-1 block text-sm ${
+                  completed ? "text-[var(--muted)] line-through" : "text-[var(--text)]"
+                }`}
+              >
+                {node.course.title}
+              </span>
+              {completed ? (
+                <span className="mt-1 inline-block text-xs font-medium text-[var(--success)]">
+                  Completed
+                </span>
+              ) : null}
+            </Link>
+          </div>
+        </div>
       </div>
-      {node.children.length > 0 && (
-        <div className="mt-2 space-y-2">
-          <div className="text-xs text-gray-500">prerequisites:</div>
+      {node.children.length > 0 ? (
+        <div className="mt-3 space-y-3 pl-4">
+          <p className="text-xs font-semibold uppercase tracking-wider text-[var(--muted)]">
+            Prerequisites
+          </p>
           {node.children.map((child) => (
-            <TreeNodeView key={child.course.courseId} node={child} depth={depth + 1} />
+            <TreeNodeView key={child.course.courseId} node={child} />
           ))}
         </div>
-      )}
+      ) : null}
     </div>
   );
 }
@@ -104,16 +111,18 @@ export function PrereqTree({ courses, rootCourse }: PrereqTreeProps) {
       const visited = new Set<string>();
       return [buildTree(rootCourse, byId, byCode, visited)];
     }
-    const rootsList = courses.filter((c) => getPrereqCourses(c, byId, byCode).length === 0);
+    const rootsList = courses.filter(
+      (c) => getPrereqCourses(c, byId, byCode).length === 0
+    );
     rootsList.sort((a, b) => a.code.localeCompare(b.code));
     const visited = new Set<string>();
     return rootsList.map((c) => buildTree(c, byId, byCode, visited));
   }, [courses, byId, byCode, rootCourse]);
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-6">
       {roots.map((node) => (
-        <TreeNodeView key={node.course.courseId} node={node} depth={0} />
+        <TreeNodeView key={node.course.courseId} node={node} />
       ))}
     </div>
   );

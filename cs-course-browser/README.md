@@ -1,8 +1,8 @@
-# BYU CS Classes – Information Architecture Prototype
+# BYU CS Course Explorer (CSV3)
 
-Bare-bones site to help CS students find information on CS classes. Built for the IA assignment; designed for easy reorganization after card sorting.
+Next.js app for browsing BYU Computer Science courses: search, filters, prerequisite planning, and a prerequisite tree. See **`../CHANGES.md`** in the repository root for what changed from the earlier `cs356` prototype.
 
-## Run
+## Run locally
 
 ```bash
 npm install
@@ -11,23 +11,39 @@ npm run dev
 
 Open http://localhost:3000
 
+## Production build (static)
+
+The app is configured for **static export** (`out/`), suitable for GitHub Pages or any static host.
+
+```bash
+npm run build
+```
+
+For a GitHub **project** site at `https://<user>.github.io/<repo>/`, set `BASE_PATH` to `/<repo>` when building so asset and link prefixes match:
+
+```bash
+BASE_PATH=/<your-repo-name> npm run build
+```
+
+Serve the `out/` folder with any static file server to verify.
+
 ## Data
 
-The app loads course data at **runtime** from `../cs-courses.json` (project root). To refresh:
+`loadCourses()` reads `cs-courses.json` from the app’s `src/data/` copy or, when present, the parent directory’s `cs-courses.json`. After editing data at the repo root, copy or regenerate so `src/data/cs-courses.json` stays in sync before a **production** build (static HTML is generated at build time).
+
+Refresh data with the scraper (from the repository root):
 
 ```bash
 cd ..
 python scrape_cs.py
 ```
 
-Then refresh the browser — no rebuild needed. The scraper writes to the root; the app reads it on each request.
+## Hierarchy
 
-## Reorganizing the Hierarchy
-
-Edit `src/config/hierarchy.ts`. The `PRIMARY_CATEGORIES` array defines how courses are grouped. Change the `label` and `matches` function for each category. No need to touch components.
+Edit `src/config/hierarchy.ts` to change how filters group courses.
 
 ## Structure
 
-- **`src/types/course.ts`** – Course interface. Swap data sources by ensuring they conform to this shape.
-- **`src/config/hierarchy.ts`** – Hierarchy config. Primary categories and rules.
-- **`src/components/`** – Modular components: `CourseCard`, `CourseDetail`, `CategorySection`, `SearchFilter`, `CourseBrowser`.
+- `src/types/course.ts` – Course shape.
+- `src/config/hierarchy.ts` – Filter categories.
+- `src/components/` – UI: `CourseBrowser`, `CourseDetail`, `PrereqTree`, `SiteHeader`, etc.

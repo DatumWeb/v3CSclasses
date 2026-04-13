@@ -1,8 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f4f6fa;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-muted: #f8fafc;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --muted: #64748b;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --ring: rgba(37, 99, 235, 0.35);
+  --success: #059669;
+  --success-surface: #ecfdf5;
+  --success-border: #6ee7b7;
+  --chip: #e0e7ff;
+  --chip-text: #3730a3;
   color-scheme: light;
 }
 
@@ -11,8 +24,31 @@
   --color-foreground: var(--foreground);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
+  background-image:
+    radial-gradient(ellipse 120% 80% at 100% -20%, rgba(37, 99, 235, 0.08), transparent 50%),
+    radial-gradient(ellipse 80% 60% at 0% 100%, rgba(14, 165, 233, 0.06), transparent 45%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+/* Focus visible for keyboard users */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
 }

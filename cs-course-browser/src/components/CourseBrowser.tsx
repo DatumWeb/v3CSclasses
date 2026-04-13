@@ -1,6 +1,5 @@
 /**
  * Client component: search + hierarchy-based course list.
- * Filter by category set (level, topic, semester, entry-level) or "Courses you can take".
  */
 "use client";
 
@@ -111,13 +110,32 @@ export function CourseBrowser({ courses }: CourseBrowserProps) {
     return map;
   }, [isCanTakeMode, filterIndex, filtered, canTakeCourses]);
 
+  const resultCount = useMemo(() => {
+    let n = 0;
+    for (const [, list] of byCategory) n += list.length;
+    return n;
+  }, [byCategory]);
+
   return (
-    <div className="space-y-4">
+    <div className="space-y-8">
       <SearchFilter value={search} onChange={setSearch} />
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="text-sm text-gray-600">Filter by:</span>
+
+      <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm sm:p-5">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-sm font-semibold text-[var(--text)]">
+              Organize by
+            </p>
+            <p className="text-xs text-[var(--muted)]">
+              Tap a category set, then scroll sections below.
+            </p>
+          </div>
+          <p className="font-mono text-xs text-[var(--muted)]">
+            {resultCount} course{resultCount === 1 ? "" : "s"} shown
+          </p>
+        </div>
         <div
-          className="inline-flex flex-wrap gap-1 rounded-full border border-gray-400 p-1"
+          className="mt-4 flex flex-wrap gap-2"
           role="radiogroup"
           aria-label="Filter by category"
         >
@@ -128,10 +146,10 @@ export function CourseBrowser({ courses }: CourseBrowserProps) {
               role="radio"
               aria-checked={filterIndex === i}
               onClick={() => setFilterIndex(i)}
-              className={`rounded-full px-3 py-1.5 text-sm transition-colors ${
+              className={`rounded-full border px-3.5 py-2 text-left text-sm font-medium transition-[background,border-color,box-shadow] ${
                 filterIndex === i
-                  ? "bg-gray-800 text-white"
-                  : "bg-white text-gray-700 hover:bg-gray-100"
+                  ? "border-[var(--accent)] bg-[#eff6ff] text-[var(--accent-hover)] shadow-sm"
+                  : "border-[var(--border)] bg-[var(--surface-muted)] text-[var(--text)] hover:border-[var(--muted)]"
               }`}
             >
               {label}
@@ -139,21 +157,37 @@ export function CourseBrowser({ courses }: CourseBrowserProps) {
           ))}
         </div>
       </div>
+
       {isCanTakeMode && (
-        <p className="text-sm text-gray-600">
-          Courses where all prerequisites (in our data) are marked completed.
-        </p>
+        <div className="rounded-2xl border border-[var(--success-border)] bg-[var(--success-surface)] px-4 py-3 text-sm text-[var(--success)]">
+          <strong className="font-semibold">Planning mode:</strong> showing
+          courses whose prerequisites (in this dataset) are all marked
+          completed. Add more completions to unlock additional courses.
+        </div>
       )}
+
       <div>
         {byCategory.size === 0 ? (
-          <p className="border border-gray-400 p-4 text-sm text-gray-600">
-            {isCanTakeMode
-              ? "No courses yet. Mark prerequisites as completed to see courses you can take."
-              : "No courses match your search."}
-          </p>
+          <div className="rounded-2xl border border-dashed border-[var(--border)] bg-[var(--surface-muted)]/80 px-6 py-12 text-center">
+            <p className="text-sm font-medium text-[var(--text)]">
+              {isCanTakeMode
+                ? "Nothing here yet"
+                : "No courses match your search"}
+            </p>
+            <p className="mt-2 text-sm text-[var(--muted)]">
+              {isCanTakeMode
+                ? "Mark prerequisites as completed on course cards or detail pages to see what opens up."
+                : "Try a shorter search term or clear the box to see everything."}
+            </p>
+          </div>
         ) : (
-          Array.from(byCategory.entries()).map(([label, list]) => (
-            <CategorySection key={label} label={label} courses={list} />
+          Array.from(byCategory.entries()).map(([label, list], i) => (
+            <CategorySection
+              key={label}
+              label={label}
+              courses={list}
+              accentIndex={i}
+            />
           ))
         )}
       </div>

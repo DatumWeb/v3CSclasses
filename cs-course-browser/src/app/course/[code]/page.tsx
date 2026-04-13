@@ -1,10 +1,10 @@
 /**
- * Course detail page. Displays full info for a single CS class.
+ * Course detail page.
  */
 import Link from "next/link";
-
-export const dynamic = "force-dynamic";
-import { ChangeView } from "@/components/ChangeView";
+import { notFound } from "next/navigation";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 import { CourseDetail } from "@/components/CourseDetail";
 import { loadCourses } from "@/lib/loadCourses";
 
@@ -12,37 +12,42 @@ interface PageProps {
   params: Promise<{ code: string }>;
 }
 
+export function generateStaticParams() {
+  const courses = loadCourses();
+  return courses.map((c) => ({ code: c.code }));
+}
+
 export default async function CoursePage({ params }: PageProps) {
   const { code } = await params;
+  const decoded = decodeURIComponent(code);
   const courses = loadCourses();
-  const course = courses.find(
-    (c) => c.code === decodeURIComponent(code)
-  );
+  const course = courses.find((c) => c.code === decoded);
 
   if (!course) {
-    return (
-      <div className="min-h-screen p-4">
-        <p className="border border-gray-400 p-4">Course not found.</p>
-        <Link
-          href="/"
-          className="mt-4 inline-flex rounded-full border border-gray-400 px-3 py-1.5 text-sm hover:bg-gray-100"
-        >
-          ← Back to list
-        </Link>
-      </div>
-    );
+    notFound();
   }
 
   return (
-    <div className="min-h-screen border-t-4 border-gray-800 bg-white p-4">
-      <header className="mb-4 border-b border-gray-400 pb-4">
-        <div className="flex justify-center py-4">
-          <ChangeView currentView="list" courseCode={course.code} />
-        </div>
-      </header>
-      <main className="max-w-2xl">
+    <div className="flex min-h-screen flex-col">
+      <SiteHeader
+        view="list"
+        courseCode={course.code}
+        title={course.code}
+        description={course.title}
+      />
+      <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8 sm:px-6 lg:px-8">
+        <nav className="mb-6">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-sm font-medium text-[var(--accent)] hover:underline"
+          >
+            <span aria-hidden>←</span>
+            Back to course list
+          </Link>
+        </nav>
         <CourseDetail course={course} />
       </main>
+      <SiteFooter />
     </div>
   );
 }
