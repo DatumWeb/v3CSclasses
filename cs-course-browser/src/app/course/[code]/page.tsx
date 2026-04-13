@@ -12,14 +12,27 @@ interface PageProps {
   params: Promise<{ code: string }>;
 }
 
+/**
+ * Use the same encoding as <Link href={`/course/${encodeURIComponent(code)}`}>.
+ * With output: "export", dev requires param values to match the URL segment;
+ * decoded "C S 111" does not match "C%20S%20111".
+ */
 export function generateStaticParams() {
   const courses = loadCourses();
-  return courses.map((c) => ({ code: c.code }));
+  return courses.map((c) => ({ code: encodeURIComponent(c.code) }));
+}
+
+function decodeCourseParam(param: string): string {
+  try {
+    return decodeURIComponent(param);
+  } catch {
+    return param;
+  }
 }
 
 export default async function CoursePage({ params }: PageProps) {
   const { code } = await params;
-  const decoded = decodeURIComponent(code);
+  const decoded = decodeCourseParam(code);
   const courses = loadCourses();
   const course = courses.find((c) => c.code === decoded);
 

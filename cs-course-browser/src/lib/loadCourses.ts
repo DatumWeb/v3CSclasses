@@ -1,16 +1,26 @@
 /**
- * Load course data at runtime from the project root cs-courses.json.
- * This is the file the scraper writes to — updates appear on refresh, no rebuild needed.
+ * Load course data from cs-courses.json (filesystem when available, else bundled copy).
+ * Filesystem paths support the scraper writing to the repo root during dev; the bundled
+ * fallback ensures generateStaticParams() never returns [] when cwd differs (e.g. Turbopack
+ * picking a monorepo root), which breaks /course/[code] under output: "export".
  */
 import fs from "fs";
 import path from "path";
 import type { Course } from "@/types/course";
+import bundledCourses from "@/data/cs-courses.json";
 
-const ROOT_JSON = path.join(process.cwd(), "..", "cs-courses.json");
-const APP_JSON = path.join(process.cwd(), "src", "data", "cs-courses.json");
+function candidatePaths(): string[] {
+  const cwd = process.cwd();
+  return [
+    path.join(cwd, "src", "data", "cs-courses.json"),
+    path.join(cwd, "..", "cs-courses.json"),
+    path.join(cwd, "cs-course-browser", "src", "data", "cs-courses.json"),
+    path.join(cwd, "cs-course-browser", "..", "cs-courses.json"),
+  ];
+}
 
 export function loadCourses(): Course[] {
-  for (const p of [ROOT_JSON, APP_JSON]) {
+  for (const p of candidatePaths()) {
     try {
       const raw = fs.readFileSync(p, "utf-8");
       return JSON.parse(raw) as Course[];
@@ -18,5 +28,5 @@ export function loadCourses(): Course[] {
       continue;
     }
   }
-  return [];
+  return bundledCourses as Course[];
 }
