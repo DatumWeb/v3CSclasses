@@ -1,5 +1,8 @@
 # Build static site and publish to GitHub Pages (project site:
 # https://<user>.github.io/<repo>/).
+#
+# In repo Settings → Pages: set Source to "GitHub Actions" (not "Deploy from a branch").
+# If you still see only README, branch deployment is still active or an old deployment is cached.
 name: Deploy to GitHub Pages
 
 on:
@@ -22,9 +25,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Registers the Pages site with Actions (required for upload/deploy to work reliably).
+      - uses: actions/configure-pages@v5
+
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           cache: npm
           cache-dependency-path: cs-course-browser/package-lock.json
 
@@ -37,6 +43,11 @@ jobs:
           npm ci
           npm run build
 
+      - name: Verify static export
+        run: |
+          test -f cs-course-browser/out/index.html
+          ls -la cs-course-browser/out | head -20
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: cs-course-browser/out
@@ -44,6 +55,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
